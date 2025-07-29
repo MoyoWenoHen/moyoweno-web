@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoyoWeno: Ihr Partner für Erfolg in Angola</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #E0E0E0;
+            background-color: #0d1630; /* Fallback background */
+        }
+
+        .aurora-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            background: 
+                radial-gradient(ellipse at top, rgba(13, 22, 48, 0.7) 0%, rgba(13, 22, 48, 0.9) 70%),
+                url('https://upload.wikimedia.org/wikipedia/commons/e/e3/Pedras_de_Punguandongo.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .aurora-container::before,
+        .aurora-container::after {
+            content: '';
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            opacity: 0.25;
+            mix-blend-mode: screen;
+            animation: aurora-flow 25s linear infinite;
+            filter: blur(100px);
+        }
+
+        .aurora-container::before {
+            background: linear-gradient(45deg, #0047AB, #007FFF);
+            top: -20%;
+            left: -20%;
+        }
+
+        .aurora-container::after {
+            background: linear-gradient(45deg, #4A00E0, #8E2DE2);
+            bottom: -20%;
+            right: -20%;
+            animation-delay: -12.5s;
+        }
+
+        @keyframes aurora-flow {
+            0%, 100% {
+                transform: translateX(0) translateY(0) scale(1);
+            }
+            50% {
+                transform: translateX(100px) translateY(50px) scale(1.2);
+            }
+        }
+
+        .content-card {
+            background-color: rgba(26, 32, 44, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .icon-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+        
+        .icon-list svg {
+            flex-shrink: 0;
+            margin-right: 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+
+    <div class="aurora-container"></div>
+
+    <div class="relative min-h-screen flex items-center justify-center text-center p-4 overflow-hidden">
+        <div class="scroll-reveal">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">MoyoWeno</h1>
+            <p class="text-xl md:text-2xl text-blue-200">Ihr Partner für Erfolg in Angola</p>
+        </div>
+    </div>
+
+    <main class="relative z-10 p-4 md:p-8">
+        <div class="max-w-4xl mx-auto space-y-12 md:space-y-20">
+
+            <section class="scroll-reveal content-card rounded-xl p-6 md:p-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-300 mb-4">Unsere Mission: Brücken bauen, Geschäfte ermöglichen</h2>
+                <p class="text-base md:text-lg leading-relaxed">
+                    MoyoWeno ist Ihr erfahrener Spezialist für den Markteintritt und die Geschäftsentwicklung zwischen Europa (insbesondere dem deutschsprachigen Raum) und Angola. Wir repräsentieren und vermitteln faire und transparente Geschäfte, insbesondere für fähige mittelständische Unternehmen. Unser Fokus liegt auf einem partnerschaftlichen Geschäftsmodell und der aktiven Beteiligung an der Entwicklung Angolas.
+                </p>
+            </section>
+
+            <section class="scroll-reveal content-card rounded-xl p-6 md:p-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-300 mb-6">Warum Angola? Unsere lokale Stärke.</h2>
+                <p class="text-base md:text-lg leading-relaxed mb-6">
+                    Angola ist unser geographischer Schwerpunkt in Südwestafrika. Wir verfügen über eigene Büros in Berlin und Luanda, von wo aus unsere Mitarbeiter lokale Marktteilnehmer betreuen und beraten. Unser tiefes Verständnis für die lokalen Gegebenheiten und unser umfangreiches Netzwerk sind Ihr Vorteil.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <div class="bg-gray-800/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-200 mb-2">Fundierte Marktkenntnis</h3>
+                        <p class="text-sm">Wir verstehen die spezifischen Anforderungen und Chancen in Angola.</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-200 mb-2">Starkes lokales Netzwerk</h3>
+                        <p class="text-sm">Umfassende Kontakte zu Behörden, Finanzdienstleistern, Handel, Industrie und mehr.</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-200 mb-2">Expertise vor Ort</h3>
+                        <p class="text-sm">Lokale Partner bieten steuerliche, rechtliche und unternehmerische Unterstützung.</p>
+                    </div>
+                    <div class="bg-gray-800/50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-200 mb-2">Nachhaltiges Engagement</h3>
+                        <p class="text-sm">Wir beteiligen uns aktiv an der Diversifizierung der Wirtschaft Angolas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="scroll-reveal content-card rounded-xl p-6 md:p-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-300 mb-6">Unser Leistungsspektrum</h2>
+                <p class="text-base md:text-lg leading-relaxed mb-6">
+                    Wir bieten ein umfassendes Portfolio an Dienstleistungen, um Ihr Engagement in Angola zu optimieren:
+                </p>
+                 <ul class="icon-list text-left text-base md:text-lg">
+                    <li><svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V7.618a1 1 0 01.553-.894L9 4m0 16v-8m0 8h12l-5.447-2.724A1 1 0 0015 16.382V7.618a1 1 0 00-.553-.894L9 4m0 0V3m0 1v8m12 8v-8m0 8h-6.586a1 1 0 01-.707-.293L9 12m12 8h-3"></path></svg><span><b>Markteintritt & Beratung:</b> Marktanalysen, Kontaktherstellung, Unternehmensgründungen, M&A, Finanzierung, Beratung, Trouble-Shooting.</span></li>
+                    <li><svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path></svg><span><b>Geschäftsvermittlung:</b> Handels- und Projektgeschäfte sowie Beteiligungen für deutsche Unternehmen in Angola und umgekehrt.</span></li>
+                    <li><svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg><span><b>Repräsentanzen & Vertretungen:</b> Von Basisdiensten bis zur Vollrepräsentanz mit Kundenakquise und begleitenden Services.</span></li>
+                </ul>
+            </section>
+            
+            <section class="scroll-reveal content-card rounded-xl p-6 md:p-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-300 mb-6">Branchenfokus</h2>
+                 <div class="flex flex-wrap justify-center gap-3">
+                    <span class="bg-gray-700/60 text-blue-200 text-sm font-medium px-3 py-1 rounded-full">Finanz- & Versicherungswesen</span>
+                    <span class="bg-gray-700/60 text-blue-200 text-sm font-medium px-3 py-1 rounded-full">Schwerindustrie & Maschinenbau</span>
+                    <span class="bg-gray-700/60 text-blue-200 text-sm font-medium px-3 py-1 rounded-full">Gesundheitswesen & Pharma</span>
+                    <span class="bg-gray-700/60 text-blue-200 text-sm font-medium px-3 py-1 rounded-full">Automotive & Telekommunikation</span>
+                    <span class="bg-gray-700/60 text-blue-200 text-sm font-medium px-3 py-1 rounded-full">Energie & Agrarwirtschaft</span>
+                    <span class="bg-gray-700/60 text-blue-200 text-sm font-medium px-3 py-1 rounded-full">Infrastruktur & Logistik</span>
+                    <span class="bg-gray-700/60 text-blue-200 text-sm font-medium px-3 py-1 rounded-full">Hotel & Tourismus</span>
+                    <span class="bg-gray-700/60 text-blue-200 text-sm font-medium px-3 py-1 rounded-ful
